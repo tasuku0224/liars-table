@@ -321,7 +321,7 @@
     }
     if (el.value) {
       el.value.classList.toggle('is-silent', !!c.silent);
-      el.value.textContent = (c.silent ? 0 : c.meter === 'all' ? avgNoise() : c.noise * 100).toFixed(2) + '%';
+      el.value.textContent = (c.silent ? 0 : c.meter === 'all' ? avgNoise() * 100 : c.noise * 100).toFixed(2) + '%';
     }
 
     seatEls.forEach(function (b, k) {
