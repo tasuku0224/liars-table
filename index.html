@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ライアーズ・テーブル 第1巻『嘘つきの円卓』｜公式特設サイト</title>
+<meta name="description" content="人の嘘には、音がする。八人の嘘つきが、一席の真実を賭ける。ほろ つばさ『ライアーズ・テーブル 第1巻『嘘つきの円卓』』公式特設サイト。プロローグ試し読み、円卓の八人、黒塗りの極秘資料。">
+<meta name="theme-color" content="#070a12">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ライアーズ・テーブル 第1巻『嘘つきの円卓』">
+<meta property="og:description" content="人の嘘には、音がする。八人の嘘つきが、一席の真実を賭ける心理戦ゲーム。">
+<meta property="og:site_name" content="ライアーズ・テーブル 公式特設サイト">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ============ INTRO ============ -->
+<div id="intro" class="intro" aria-hidden="true">
+  <canvas id="introNoise" class="intro-noise"></canvas>
+  <div class="intro-scan"></div>
+  <div class="intro-bars">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="intro-stage">
+    <div class="intro-emblem">
+      <svg viewBox="0 0 400 400" aria-hidden="true" class="emblem-svg">
+        <circle cx="200" cy="200" r="152" class="ring-outer"/>
+        <circle cx="200" cy="200" r="126" class="ring-inner"/>
+        <g class="seats">
+          <circle cx="200" cy="48"  r="5.5" class="s-gold"/>
+          <circle cx="307" cy="93"  r="5.5" class="s-gold"/>
+          <circle cx="352" cy="200" r="5.5" class="s-gold"/>
+          <circle cx="307" cy="307" r="5.5" class="s-gold"/>
+          <circle cx="200" cy="352" r="5.5" class="s-gold"/>
+          <circle cx="93"  cy="307" r="5.5" class="s-gold"/>
+          <circle cx="48"  cy="200" r="5.5" class="s-gold"/>
+          <circle cx="93"  cy="93"  r="5.5" class="s-red"/>
+        </g>
+      </svg>
+    </div>
+    <p class="intro-catch">人の嘘には、音がする。</p>
+    <p class="intro-title">ライアーズ・テーブル</p>
+    <p class="intro-sub">第1巻『嘘つきの円卓』</p>
+  </div>
+  <button id="skipIntro" class="intro-skip" type="button">SKIP <span>›</span></button>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="topbar" id="topbar">
+  <a class="brand" href="#top" aria-label="ライアーズ・テーブル 公式特設サイト トップへ">
+    <span class="brand-mark">
+      <svg viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="16" fill="none" stroke="currentColor" stroke-width="0.8" opacity=".55"/>
+        <circle cx="20" cy="6" r="1.7" fill="currentColor"/>
+        <circle cx="31" cy="11" r="1.7" fill="currentColor"/>
+        <circle cx="34" cy="20" r="1.7" fill="#d9383a"/>
+        <circle cx="31" cy="29" r="1.7" fill="currentColor"/>
+        <circle cx="20" cy="34" r="1.7" fill="currentColor"/>
+        <circle cx="9" cy="29" r="1.7" fill="currentColor"/>
+        <circle cx="6" cy="20" r="1.7" fill="currentColor"/>
+        <circle cx="9" cy="11" r="1.7" fill="currentColor"/>
+      </svg>
+    </span>
+    <span class="brand-text">LIARS<span>TABLE</span></span>
+  </a>
+  <nav class="navlinks" aria-label="セクション">
+    <a href="#case">資料</a>
+    <a href="#table">円卓の八人</a>
+    <a href="#read">試し読み</a>
+    <a href="#get" class="nav-cta">読む</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <canvas id="heroGrain" class="hero-grain" aria-hidden="true"></canvas>
+  <div class="hero-inner">
+    <p class="tagline"><span>心理戦ゲーム</span></p>
+
+    <div class="hero-emblem">
+      <svg viewBox="0 0 640 640" class="emblem" role="img" aria-label="金の縁を持つ円卓。八つの席のうち一席だけが真紅に脈動している。">
+        <defs>
+          <radialGradient id="tableGlow" cx="50%" cy="46%" r="52%">
+            <stop offset="0%" stop-color="#2a3350" stop-opacity=".95"/>
+            <stop offset="58%" stop-color="#111a30" stop-opacity=".85"/>
+            <stop offset="100%" stop-color="#070a12" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="redSeat" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ff6b6c" stop-opacity=".95"/>
+            <stop offset="55%" stop-color="#d9383a" stop-opacity=".55"/>
+            <stop offset="100%" stop-color="#d9383a" stop-opacity="0"/>
+          </radialGradient>
+          <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+            <feGaussianBlur stdDeviation="6" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+        <circle cx="320" cy="320" r="292" fill="url(#tableGlow)"/>
+
+        <!-- rotating dashed ring -->
+        <g class="spin-slow">
+          <circle cx="320" cy="320" r="268" fill="none" stroke="#d4af6a" stroke-width=".6" stroke-dasharray="1 13" opacity=".45"/>
+        </g>
+        <circle cx="320" cy="320" r="236" fill="none" stroke="#d4af6a" stroke-width="1" opacity=".38"/>
+        <circle cx="320" cy="320" r="188" fill="none" stroke="#d4af6a" stroke-width=".7" opacity=".2"/>
+        <circle cx="320" cy="320" r="96"  fill="none" stroke="#d4af6a" stroke-width=".5" opacity=".12"/>
+
+        <!-- radial ticks -->
+        <g stroke="#d4af6a" stroke-width=".7" opacity=".28">
+          <line x1="320" y1="84"  x2="320" y2="64"/>
+          <line x1="320" y1="556" x2="320" y2="576"/>
+          <line x1="84"  y1="320" x2="64"  y2="320"/>
+          <line x1="556" y1="320" x2="576" y2="320"/>
+        </g>
+
+        <!-- seats: 8 -->
+        <g class="hero-seats">
+          <circle cx="320" cy="84"  r="6" class="hs"/>
+          <circle cx="487" cy="153" r="6" class="hs"/>
+          <circle cx="556" cy="320" r="6" class="hs"/>
+          <circle cx="487" cy="487" r="6" class="hs"/>
+          <circle cx="320" cy="556" r="6" class="hs"/>
+          <circle cx="153" cy="487" r="6" class="hs"/>
+          <circle cx="84"  cy="320" r="6" class="hs"/>
+          <circle cx="153" cy="153" r="6" class="hs"/>
+        </g>
+
+        <!-- the one red seat -->
+        <g class="red-seat" filter="url(#softGlow)">
+          <circle cx="487" cy="153" r="26" fill="url(#redSeat)" class="red-halo"/>
+          <circle cx="487" cy="153" r="6.2" fill="#e84546"/>
+        </g>
+      </svg>
+      <p class="emblem-hint">八つの席、ひとつの真実。</p>
+    </div>
+
+    <h1 class="hero-title">
+      <span class="line">ライアーズ</span>
+      <span class="line">テーブル</span>
+    </h1>
+    <p class="hero-volume">第1巻『嘘つきの円卓』</p>
+    <p class="hero-author">ほろ つばさ</p>
+
+    <p class="hero-catch"><span>人の嘘には、音がする。</span></p>
+
+    <div class="hero-actions">
+      <a class="btn btn-gold" href="#read">プロローグを読む</a>
+      <a class="btn btn-ghost" href="https://www.amazon.co.jp/dp/B0HRSHH7TR" target="_blank" rel="noopener">Kindleで読む</a>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><span></span>SCROLL</div>
+</section>
+
+<!-- ============ CASE FILE ============ -->
+<section class="section case" id="case">
+  <div class="wrap">
+    <p class="kicker"><span class="kicker-line"></span>CASE FILE ／ 極秘</p>
+    <h2 class="h2">48頁のうち、<br class="sp">47頁が黒い。</h2>
+    <p class="lead">
+      放課後の下駄箱に入っていた、宛名も差出人もない茶封筒。中身はコピー用紙が二枚だけ。<br>
+      一枚目は、<em>――久世倒産事案に関する内部調査報告書（第1頁／全48頁）――</em>。
+      本文の九割は黒塗りで潰され、読めるのは断片だけだった。
+    </p>
+
+    <div class="case-grid">
+      <!-- document -->
+      <article class="doc" aria-label="黒塗りの内部調査報告書 第1頁">
+        <div class="doc-head">
+          <span class="doc-no">FILE No. <b>048-1</b></span>
+          <span class="stamp">極秘</span>
+        </div>
+        <p class="doc-title">久世倒産事案に関する内部調査報告書<span>（第1頁／全48頁）</span></p>
+        <div class="doc-rule"></div>
+
+        <div class="doc-body">
+          <p class="dl"><span class="redact">本件の資金繰り悪化は、取引中止のみを原因とするものではなく</span></p>
+          <p class="dl"><span class="bar w100"></span></p>
+          <p class="dl"><span class="bar w88"></span><span class="bar w8"></span></p>
+          <p class="dl"><span class="redact">第三者の介在が強く示唆される。特に、調査対象者Kの</span></p>
+          <p class="dl"><span class="bar w72"></span><span class="bar w20"></span></p>
+          <p class="dl"><span class="bar w100"></span></p>
+          <p class="dl"><span class="bar w54"></span><span class="bar w34"></span></p>
+          <p class="dl"><span class="bar w92"></span></p>
+          <p class="dl"><span class="bar w64"></span><span class="bar w22"></span></p>
+        </div>
+
+        <p class="doc-foot">
+          <span>管理番号 <b>048-1-0</b></span>
+          <span>作成日 <b>——・——・——</b></span>
+        </p>
+        <p class="doc-tip">黒塗りに触れると、断片が浮かぶ。</p>
+      </article>
+
+      <!-- right column -->
+      <div class="case-side">
+        <div class="counter-card">
+          <p class="counter-label">DISPOSAL ／ 保管期限</p>
+          <p class="counter-day"><span>7</span><small>日後</small></p>
+          <p class="counter-note">本資料は焼却処分となる。<br>処分を止める方法は、ひとつだけ。</p>
+          <div class="counter-bar"><i></i></div>
+          <p class="counter-foot"><span class="dot-red"></span>COUNTDOWN — 07 DAYS</p>
+        </div>
+
+        <ul class="pages" aria-label="全48頁のうち47頁が黒塗り">
+          <li class="p-on" title="第1頁">01</li>
+          <li>02</li><li>03</li><li>04</li><li>05</li><li>06</li><li>07</li><li>08</li>
+          <li>09</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li>
+          <li>17</li><li>18</li><li>19</li><li>20</li><li>21</li><li>22</li><li>23</li><li>24</li>
+          <li>25</li><li>26</li><li>27</li><li>28</li><li>29</li><li>30</li><li>31</li><li>32</li>
+          <li>33</li><li>34</li><li>35</li><li>36</li><li>37</li><li>38</li><li>39</li><li>40</li>
+          <li>41</li><li>42</li><li>43</li><li>44</li><li>45</li><li>46</li><li>47</li><li>48</li>
+        </ul>
+        <p class="pages-note"><span class="dot-gold"></span>第1頁のみ可読 ／ 残り47頁は未開示</p>
+
+        <div class="offer">
+          <p class="offer-label">THE TABLE ／ 優勝賞金</p>
+          <p class="offer-price">¥100,000,000</p>
+          <p class="offer-note">ただし、対価は現金ではない。<br>あなたの「読み」で支払う。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- father's mail -->
+    <figure class="mail">
+      <figcaption>
+        <span class="mail-from">FROM ／ 父</span>
+        <span class="mail-sub">三年前、失踪の夜に届いた一通</span>
+      </figcaption>
+      <blockquote>嘘をつくな。信じろ</blockquote>
+      <p class="mail-note">意味が分からなかった。いや、今も分からない。<br>俺が嘘をついたことなどない。俺は本当のことしか言わなかった。<br>それが全部を壊したのに。</p>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ THE TABLE ============ -->
+<section class="section table-sec" id="table">
+  <div class="wrap">
+    <p class="kicker"><span class="kicker-line"></span>THE TABLE ／ 円卓の八人</p>
+    <h2 class="h2">八つの席。<br class="sp">八つの嘘。</h2>
+    <p class="lead">
+      席を選ぶと、その人物の「ノイズ」が聞こえる。<br>
+      嘘の大きさ、静けさの質。八人分の反応を、耳の奥で聴き比べろ。
+    </p>
+
+    <div class="table-stage">
+      <div class="table-figure">
+        <svg viewBox="0 0 640 640" class="table-svg" aria-hidden="true">
+          <defs>
+            <radialGradient id="tGlow2" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#28314c" stop-opacity=".9"/>
+              <stop offset="62%" stop-color="#0f1728" stop-opacity=".8"/>
+              <stop offset="100%" stop-color="#070a12" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="320" cy="320" r="286" fill="url(#tGlow2)"/>
+          <g class="spin-slow">
+            <circle cx="320" cy="320" r="262" fill="none" stroke="#d4af6a" stroke-width=".6" stroke-dasharray="1 11" opacity=".4"/>
+          </g>
+          <circle cx="320" cy="320" r="232" fill="none" stroke="#d4af6a" stroke-width="1.1" opacity=".42"/>
+          <circle cx="320" cy="320" r="180" fill="none" stroke="#d4af6a" stroke-width=".6" opacity=".18"/>
+          <text x="320" y="314" text-anchor="middle" class="t-center">LIARS</text>
+          <text x="320" y="340" text-anchor="middle" class="t-center">TABLE</text>
+          <text x="320" y="366" text-anchor="middle" class="t-small">SEATS 08</text>
+        </svg>
+        <div class="seats-layer" id="seatsLayer" role="group" aria-label="円卓の八人"></div>
+      </div>
+
+      <!-- character panel -->
+      <div class="char-panel" id="charPanel" aria-live="polite">
+        <p class="char-index"><span id="charNo">01</span> / 08 <span class="char-status" id="charStatus">READING</span></p>
+        <h3 class="char-name" id="charName">久世 玲央</h3>
+        <p class="char-meta"><span id="charKana">くぜ れお</span>　<span id="charAge">17</span>歳 ／ <span id="charRole">高校生</span></p>
+        <p class="char-desc" id="charDesc"></p>
+        <blockquote class="char-quote" id="charQuote"></blockquote>
+
+        <div class="meter">
+          <div class="meter-head">
+            <span class="meter-label">NOISE REACTION</span>
+            <span class="meter-value" id="meterValue">0.00%</span>
+          </div>
+          <canvas id="meterCanvas" class="meter-canvas" height="92"></canvas>
+          <div class="meter-foot">
+            <span id="meterFoot">—</span>
+            <span class="meter-scale">0 　 50 　 100</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="seat-list" id="seatList" role="group" aria-label="円卓の八人（名前から選ぶ）"></div>
+
+    <div class="host">
+      <div class="host-head">
+        <p class="kicker small"><span class="kicker-line"></span>HOST ／ 案内人</p>
+        <h3>円堂 克己</h3>
+      </div>
+      <div class="host-body">
+        <p>四十代。仕立てのいいスーツ、穏やかな笑み。声にも、全身にも、読むべき「ズレ」がひとつもない。</p>
+        <blockquote>使わなかった刃は、錆びていますか？　それとも、研がれていますか？</blockquote>
+        <p class="host-note">この男の言葉は、検証のしようのない言葉だけで正確に並んでいる。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROLOGUE ============ -->
+<section class="section read" id="read">
+  <div class="wrap narrow">
+    <p class="kicker"><span class="kicker-line"></span>PROLOGUE ／ 試し読み</p>
+    <h2 class="h2">プロローグ「ノイズ」</h2>
+
+    <div class="prose">
+      <p class="first">人の嘘には、音がする。</p>
+
+      <p>正確に言うと、音ではない。耳の奥で何かが軋むような、放送の合間に紛れ込むノイズのような感覚。嘘をつく瞬間、人の体は必ず小さく「ズレる」。まばたきの回数、声の震え、指先の動き、視線の逃げ道。そのズレの集合体が、俺にはノイズとして聞こえる。</p>
+
+      <p>最初にそれに気づいたのは、たぶん小学校に上がる前だった。<br>
+      大人は子どもに、たくさんの優しい嘘をつく。サンタクロースの話。注射は痛くないという約束。お母さんはすぐ元気になるという――あの嘘。</p>
+
+      <p>母が入院していた頃、父は毎晩そう言った。「お母さんはすぐ元気になる」。その言葉のたびに、父の声にはノイズが混じった。当時の俺は、それが何を意味するのか、言葉では理解していなかった。ただ、父がそう言うとき、俺は無性に怖くなった。</p>
+
+      <p>母が死んだのは、俺が十歳のときだ。<br>
+      葬式の帰り道、父は車の中で言った。「お父さんは大丈夫だから」。ノイズは、これまでで一番大きかった。</p>
+
+      <p>その頃には、もう分かっていた。この音は、その人が「本当ではないこと」を言うときに鳴るのだと。</p>
+
+      <p>だから俺は、人の嘘が分かる。ほぼ百パーセント、分かってしまう。<br>
+      そして、この力は、使い方を間違えれば凶器になるということも、十四歳のときに思い知った。</p>
+
+      <p>力は、真実を教えてくれる。だが、真実を知ったところで、現実は何も変わらない。むしろ、知らないほうが楽なことだってある。<br>
+      十四歳のあの日、俺はそのことを、身をもって知ることになった。</p>
+
+      <p>十四歳のとき、父の会社に大きな取引の話が来ていた。契約の前日、父は珍しく、俺を会社に連れて行った。</p>
+
+      <p>応接室の隅に座った俺の前で、相手の社長は穏やかに笑い、父と雑談を交わしていた。その雑談の端々に、ノイズが混じっていた。</p>
+
+      <p>俺はトイレに立つふりをして、廊下で父を呼び止めた。</p>
+
+      <p class="dialogue">「お父さん、あの人、嘘をついてる」</p>
+
+      <p>何の証拠もなかった。「指が動いた」「まばたきが増えた」。十四歳の子どもの言うこととして、それはあまりに頼りなかったはずだ。<br>
+      だが父は、俺の力を知っていた。小さい頃から、俺が人の嘘を外したことがないのを、父だけは知っていた。</p>
+
+      <p>――そして半年後、相手の会社は、別の巨額詐欺事件で摘発された。</p>
+
+      <p>だが、持ち上げられたのは最初の数日だけだった。<br>
+      契約が流れたことで、父の会社は資金繰りに詰まった。銀行は冷たく、取引先は離れていった。</p>
+
+      <p>俺はそのとき初めて思った。嘘を読む力は、真実を暴くためのものじゃない。人の「言えないこと」まで聞こえてしまう、ただの呪いなのだと。</p>
+
+      <p>そして、ある雨の夜。父は消えた。<br>
+      置き手紙はなかった。荷物も、そのままだった。帰宅した俺のスマホに、一通だけ、短いメールが届いていた。</p>
+
+      <p class="dialogue center">『嘘をつくな。信じろ』</p>
+
+      <p>意味が分からなかった。いや、今も分からない。<br>
+      俺が嘘をついたことなどない。俺は本当のことしか言わなかった。それが全部を壊したのに。</p>
+
+      <p>分かるのは一つだけ。人の嘘を読む力は、正しく使っても人を不幸にする、ということだ。</p>
+
+      <p>だから俺は決めた。二度と、読まない。<br>
+      ノイズが聞こえても、聞こえないふりをする。クラスメイトの他愛ない嘘も、先生の作り笑いも、全部、聞き流す。普通の高校生として、静かに生きる。</p>
+
+      <p>三年間、俺はその約束を守ってきた。</p>
+
+      <p>……そう思っていた。</p>
+    </div>
+
+    <div class="prose-cut">
+      <p>――その決意が、今日、一枚の黒塗りの紙と一緒に崩れ去った。</p>
+      <div class="cut-actions">
+        <a class="btn btn-gold" href="https://kakuyomu.jp/works/11054822666899957753" target="_blank" rel="noopener">第1章を無料で読む<small>カクヨム</small></a>
+        <a class="btn btn-ghost" href="https://www.amazon.co.jp/dp/B0HRSHH7TR" target="_blank" rel="noopener">本編をKindleで読む<small>¥680 ／ Kindle Unlimited対象</small></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GET ============ -->
+<section class="section get" id="get">
+  <div class="wrap">
+    <p class="kicker"><span class="kicker-line"></span>READ ／ 続きを読む</p>
+    <h2 class="h2">円卓に、着け。</h2>
+    <p class="lead">第1章はカクヨムで無料公開中。本編はKindleにて配信中。</p>
+
+    <div class="cards">
+      <a class="card" href="https://kakuyomu.jp/works/11054822666899957753" target="_blank" rel="noopener">
+        <p class="card-label">KAKUYOMU</p>
+        <h3>第1章「黒塗りの招待状」</h3>
+        <p class="card-body">下駄箱の茶封筒から、すべては始まる。第1章を無料で公開中。</p>
+        <p class="card-cta">無料で読む <span>↗</span></p>
+      </a>
+      <a class="card featured" href="https://www.amazon.co.jp/dp/B0HRSHH7TR" target="_blank" rel="noopener">
+        <p class="card-label">AMAZON KINDLE</p>
+        <h3>ライアーズ・テーブル<br>第1巻『嘘つきの円卓』</h3>
+        <p class="card-body">¥680 ／ Kindle Unlimited対象 ／ 174ページ<br>2026年11月15日 発売</p>
+        <p class="card-cta">Kindleで読む <span>↗</span></p>
+      </a>
+    </div>
+
+    <p class="get-note">
+      著者ページ：<a href="https://kakuyomu.jp/users/tasukudayo" target="_blank" rel="noopener">ほろ つばさ</a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <p class="footer-title">ライアーズ・テーブル</p>
+      <p class="footer-sub">第1巻『嘘つきの円卓』　ほろ つばさ</p>
+    </div>
+    <nav class="footer-links" aria-label="フッター">
+      <a href="https://kakuyomu.jp/works/11054822666899957753" target="_blank" rel="noopener">カクヨム</a>
+      <a href="https://kakuyomu.jp/users/tasukudayo" target="_blank" rel="noopener">著者ページ</a>
+      <a href="https://www.amazon.co.jp/dp/B0HRSHH7TR" target="_blank" rel="noopener">Amazon</a>
+    </nav>
+  </div>
+  <p class="footer-copy">© 2026 ほろ つばさ ／ 公式特設サイト</p>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
