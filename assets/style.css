@@ -682,13 +682,14 @@ section[id]{scroll-margin-top:5rem;}
 .counter-bar i{
   display:block;
   height:100%;
-  width:12%;
-  background:linear-gradient(90deg, rgba(217,56,58,.5), #e9605f);
+  width:100%;
+  background:linear-gradient(90deg, rgba(217,56,58,.45), #e9605f);
   animation:burn 3.2s ease-in-out infinite;
 }
+/* 保管期限のバーは長さを変えない（期限が伸びて見えるため）。赤の明滅のみ。 */
 @keyframes burn{
-  0%,100%{width:8%;opacity:.6;}
-  50%{width:22%;opacity:1;}
+  0%,100%{opacity:.55;}
+  50%{opacity:1;}
 }
 .counter-foot{
   margin:0;

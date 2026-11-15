@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tasuku0224.github.io/liars-table/sitemap.xml
